@@ -4,14 +4,12 @@ module.exports = {
   content: ["src/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
   theme: {
     extend: {
-
-
       fontFamily: {
-        'roboto': ["Roboto", "sans-serif"]
-       },
+        roboto: ["Roboto", "sans-serif"],
+        Inter: ["Inter", "sans-serif"],
+        PlayfairDisplay: ["Playfair Display", "serif"],
+      },
 
-
-       
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -55,4 +53,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
