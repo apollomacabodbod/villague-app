@@ -19,7 +19,7 @@ export default function HomeHeroSection() {
             Enjoy the finest stays
           </p>
 
-          <p className="font-PlayfairDisplay text-[4.5rem] font-bold capitalize text-[#FFF]">
+          <p className="font-PlayfairDisplay text-[3.4rem] lg:text-[4.5rem] font-bold capitalize text-[#FFF]">
             Find Your Best Villa House and Appartment
           </p>
 
