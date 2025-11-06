@@ -1,6 +1,7 @@
 import modernVilla from "src/assets/home/modern-villa.jpg";
 import HomeHeroSection from "./_components/home-hero-section";
 import HomeOurVillas from "./_components/home-our-villas";
+import HomeOurVillasCards from "./_components/home-our-villas-cards";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 
       <div className="bg-[#FFF] ">
         <HomeOurVillas />
+        <HomeOurVillasCards />
       </div>
     </>
   );
