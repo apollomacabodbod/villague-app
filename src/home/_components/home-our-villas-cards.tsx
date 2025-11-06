@@ -1,0 +1,74 @@
+import mediterraneanVilla from "src/assets/villas/mediterranean-villa.jpg";
+import modernVilla from "src/assets/villas/modern-villa.jpg";
+import modernVillaWithPool from "src/assets/villas/modern-villa-with-pool.jpg";
+import kuta from "src/assets/villas/kuta.svg";
+import location from "src/assets/villas/location.svg";
+
+export default function HomeOurVillasCards() {
+  const data = [
+    {
+      id: 1,
+      Title: "The Secret Jungle Villa",
+      location: "Bali, Indonesia",
+      price: "$290,00",
+      image: mediterraneanVilla,
+    },
+    {
+      id: 2,
+      Title: "The Secret Jungle Villa",
+      location: "Bali, Indonesia",
+      price: "$290,00",
+      image: modernVilla,
+    },
+
+    {
+      id: 2,
+      Title: "The Secret Jungle Villa",
+      location: "Bali, Indonesia",
+      price: "$290,00",
+      image: modernVillaWithPool,
+    },
+  ];
+
+  return (
+    <>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-[1200px] lg:mx-auto  px-[1.25em] gap-[1.875em] mt-[4em] mb-[6.25em]">
+        {data.map((item) => (
+          <div key={item.id} className="flex flex-col gap-[1em]">
+            <div
+              className="relative  h-[25em] bg-cover bg-center "
+              style={{ backgroundImage: `url(${item.image})` }}
+            >
+              <div className="absolute top-[22.0625em] left-[1em]">
+                <div className="flex flex-col py-[0.5em] px-[1em] bg-[#FFF] rounded-[3.125em]">
+                  <div className="flex items-center justify-between gap-[0.5em]">
+                    <img src={kuta} alt="" />
+
+                    <p className="text-[#26C] font-Inter text-[0.75rem] font-bold uppercase">
+                      Kuta
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-[#222] font-PlayfairDisplay text-[1.25rem] font-bold ">
+              {item.Title}
+            </p>
+
+            <div className="flex items-center gap-[0.5em] ">
+              <img src={location} alt="" />
+              <p className="text-[#828282] font-Inter text-[0.75rem] font-bold uppercase ">
+                {item.location}
+              </p>
+            </div>
+
+            <p className="text-[#F08420] font-Inter text-[1.25rem] font-bold uppercase">
+              {item.price}
+            </p>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+}
