@@ -1,5 +1,6 @@
 import modernVilla from "src/assets/home/modern-villa.jpg";
 import HomeHeroSection from "./_components/home-hero-section";
+import HomeOurVillas from "./_components/home-our-villas";
 
 export default function Home() {
   return (
@@ -12,6 +13,10 @@ export default function Home() {
         <div className="z-10">
           <HomeHeroSection />
         </div>
+      </div>
+
+      <div className="bg-[#FFF] ">
+        <HomeOurVillas />
       </div>
     </>
   );
