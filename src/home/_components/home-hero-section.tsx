@@ -15,34 +15,110 @@ export default function HomeHeroSection() {
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 my-[9em]  max-w-[1200px] lg:mx-auto  px-[1.25em] gap-[5em]">
         <div className="flex flex-col ">
-          <p className="text-[#F6D167] font-Inter text-[0.875rem] font-bold uppercase ">
+          <motion.p
+            className="text-[#F6D167] font-Inter text-[0.875rem] font-bold uppercase "
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Enjoy the finest stays
-          </p>
+          </motion.p>
 
-          <p className="font-PlayfairDisplay text-[3.4rem] lg:text-[4.5rem] font-bold capitalize text-[#FFF]">
+          <motion.p
+            className="font-PlayfairDisplay text-[3.4rem] lg:text-[4.5rem] font-bold capitalize text-[#FFF]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Find Your Best Villa House and Appartment
-          </p>
+          </motion.p>
 
-          <p className="font-Inter text-[1.125rem] font-normal text-[#FFF] ">
+          <motion.p
+            className="font-Inter text-[1.125rem] font-normal text-[#FFF] "
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Gravida vulputate aliquet tempor siteque sed pretium non urna sed
             etid aenean haretra quam placerat adipiscing{" "}
-          </p>
+          </motion.p>
         </div>
 
         <div className="flex flex-col bg-[rgba(255,255,255,0.20)] backdrop-blur-[0.46875em] p-[2em]">
-          <p className="font-PlayfairDisplay text-[1.25rem] font-bold text-[#FFF] ">
+          <motion.p
+            className="font-PlayfairDisplay text-[1.25rem] font-bold text-[#FFF] "
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Quick Booking
-          </p>
+          </motion.p>
 
-          <p className="text-[#FFF] font-Inter text-[1.125rem] font-normal mt-[1em] ">
+          <motion.p
+            className="text-[#FFF] font-Inter text-[1.125rem] font-normal mt-[1em] "
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Diam et habitasse tortor cras donec urna eget dolor in turpis
             venenatis eget .
-          </p>
+          </motion.p>
 
-          <input
+          <motion.input
             type="text"
             className="outline-none p-[1em] text-[#222] placeholder-black mt-[2em]"
             placeholder="Email address"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
           />
 
           {/* Custom Select with Arrow */}
@@ -82,7 +158,20 @@ export default function HomeHeroSection() {
           {/* Custom Date  */}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1em] mt-[1em]">
-            <div className="relative  w-full">
+            <motion.div
+              className="relative  w-full"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               <DatePicker
                 selected={startDate}
                 onChange={(date) => setStartDate(date)}
@@ -98,9 +187,22 @@ export default function HomeHeroSection() {
                 alt="Calendar Icon"
                 className="w-[1em] h-[1em] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none"
               />
-            </div>
+            </motion.div>
 
-            <div className="relative  w-full">
+            <motion.div
+              className="relative  w-full"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               <DatePicker
                 selected={startDate}
                 onChange={(date) => setStartDate(date)}
@@ -116,10 +218,23 @@ export default function HomeHeroSection() {
                 alt="Calendar Icon"
                 className="w-[1em] h-[1em] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none"
               />
-            </div>
+            </motion.div>
           </div>
 
-          <div className="flex items-center justify-between mt-[1em]  bg-[#FFF] p-[1em]">
+          <motion.div
+            className="flex items-center justify-between mt-[1em]  bg-[#FFF] p-[1em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             <input
               type="text"
               className="outline-none text-[#222] placeholder-black w-full"
@@ -127,14 +242,27 @@ export default function HomeHeroSection() {
             />
 
             <img src={profileGuest} alt="" className=" object-cover" />
-          </div>
+          </motion.div>
 
-          <button className="flex items-center justify-center bg-[#F6D167]  px-[1.5em] py-[1em] mt-[1em] gap-[0.5em]">
+          <motion.button
+            className="flex items-center justify-center bg-[#F6D167]  px-[1.5em] py-[1em] mt-[1em] gap-[0.5em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             <p className="text-[#222] font-Inter text-[0.875rem] font-bold uppercase ">
               book now
             </p>
             <img src={bookNow} alt="" />
-          </button>
+          </motion.button>
         </div>
       </div>
     </>
