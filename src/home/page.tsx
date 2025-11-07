@@ -2,6 +2,7 @@ import modernVilla from "src/assets/home/modern-villa.jpg";
 import HomeHeroSection from "./_components/home-hero-section";
 import HomeOurVillas from "./_components/home-our-villas";
 import HomeOurVillasCards from "./_components/home-our-villas-cards";
+import HomeAboutVillague from "./_components/home-about-villague";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
         <HomeOurVillas />
         <HomeOurVillasCards />
       </div>
+
+      <HomeAboutVillague />
     </>
   );
 }
