@@ -5,6 +5,7 @@ import HomeOurVillasCards from "./_components/home-our-villas-cards";
 import HomeAboutVillague from "./_components/home-about-villague";
 import HomeOurFacilitiesCards from "./_components/home-our-facilities-cards";
 import HomeOurFacilities from "./_components/home-our-facilities";
+import HomeOtherAmenities from "./_components/home-other-amenities";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <div className="bg-[#FFF]">
         <HomeOurFacilities />
         <HomeOurFacilitiesCards />
+        <HomeOtherAmenities />
       </div>
     </>
   );
