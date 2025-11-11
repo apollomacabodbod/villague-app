@@ -3,6 +3,8 @@ import HomeHeroSection from "./_components/home-hero-section";
 import HomeOurVillas from "./_components/home-our-villas";
 import HomeOurVillasCards from "./_components/home-our-villas-cards";
 import HomeAboutVillague from "./_components/home-about-villague";
+import HomeOurFacilitiesCards from "./_components/home-our-facilities-cards";
+import HomeOurFacilities from "./_components/home-our-facilities";
 
 export default function Home() {
   return (
@@ -23,6 +25,11 @@ export default function Home() {
       </div>
 
       <HomeAboutVillague />
+
+      <div className="bg-[#FFF]">
+        <HomeOurFacilities />
+        <HomeOurFacilitiesCards />
+      </div>
     </>
   );
 }
