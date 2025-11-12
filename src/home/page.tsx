@@ -6,6 +6,7 @@ import HomeAboutVillague from "./_components/home-about-villague";
 import HomeOurFacilitiesCards from "./_components/home-our-facilities-cards";
 import HomeOurFacilities from "./_components/home-our-facilities";
 import HomeOtherAmenities from "./_components/home-other-amenities";
+import HomeSpecialOffer from "./_components/home-special-offer";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <HomeOurFacilities />
         <HomeOurFacilitiesCards />
         <HomeOtherAmenities />
+        <HomeSpecialOffer />
       </div>
     </>
   );

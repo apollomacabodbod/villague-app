@@ -4,6 +4,11 @@ module.exports = {
   content: ["src/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        customOne: "1006px", // extra small devices
+        customTwo: "800px",
+      },
+
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         Inter: ["Inter", "sans-serif"],
