@@ -9,6 +9,7 @@ import HomeOtherAmenities from "./_components/home-other-amenities";
 import HomeSpecialOffer from "./_components/home-special-offer";
 import HomeOurCustomer from "./_components/home-our-customer";
 import HomeLatestBlog from "./_components/home-latest-blog";
+import HomeLatestBlogCards from "./_components/home-latest-blog-cards";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
 
       <div className="bg-[#FFF]">
         <HomeLatestBlog />
+        <HomeLatestBlogCards />
       </div>
     </>
   );

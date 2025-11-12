@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 export default function HomeOurCustomer() {
   return (
     <>
-      <div className="bg-[#222]  pt-[6.25em] mb-[15em]">
+      <div className="bg-[#222]  pt-[6.25em] mb-[8em]">
         <div className="flex flex-col max-w-[1200px] lg:mx-auto  px-[1.25em]">
           <div className="md:flex md:items-start md:justify-between">
             <motion.p
