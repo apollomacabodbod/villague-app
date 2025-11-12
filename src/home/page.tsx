@@ -7,6 +7,7 @@ import HomeOurFacilitiesCards from "./_components/home-our-facilities-cards";
 import HomeOurFacilities from "./_components/home-our-facilities";
 import HomeOtherAmenities from "./_components/home-other-amenities";
 import HomeSpecialOffer from "./_components/home-special-offer";
+import HomeOurCustomer from "./_components/home-our-customer";
 
 export default function Home() {
   return (
@@ -34,6 +35,8 @@ export default function Home() {
         <HomeOtherAmenities />
         <HomeSpecialOffer />
       </div>
+
+      <HomeOurCustomer />
     </>
   );
 }
