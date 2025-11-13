@@ -7,6 +7,7 @@ module.exports = {
       screens: {
         customOne: "1006px", // extra small devices
         customTwo: "800px",
+        customTwo: "945px",
       },
 
       fontFamily: {
