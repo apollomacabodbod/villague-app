@@ -46,7 +46,7 @@ export default function Header() {
                   HOME
                 </Link>
                 <Link
-                  to={"/reservation"}
+                  to={"/about"}
                   className="text-white font-inter text-[0.875rem] not-italic font-bold "
                 >
                   {" "}
