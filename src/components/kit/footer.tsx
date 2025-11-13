@@ -1,8 +1,3 @@
-import logo from "src/assets/header/logo.svg";
-import facebook from "src/assets/footer/facebook.svg";
-import instagram from "src/assets/footer/instagram.svg";
-import twitter from "src/assets/footer/twitter.svg";
-import youtube from "src/assets/footer/youtube.svg";
 import chatWithUs from "src/assets/footer/chat-with-us.svg";
 import Villague from "src/assets/footer/Villague.svg";
 
