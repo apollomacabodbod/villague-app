@@ -6,8 +6,6 @@ import footerTwitter from "src/assets/footer/footer-twitter.svg";
 import footerInstagram from "src/assets/footer/footer-instagram.svg";
 import footerYoutube from "src/assets/footer/footer-youtube.svg";
 
-import { motion } from "framer-motion";
-
 export default function Footer() {
   return (
     <>
