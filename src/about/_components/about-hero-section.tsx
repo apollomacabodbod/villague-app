@@ -1,21 +1,61 @@
 import { Link } from "react-router-dom";
 import home from "src/assets/about-us/home.svg";
 import route from "src/assets/about-us/route.svg";
+import { motion } from "framer-motion";
 
 export default function AboutHeroSection() {
   return (
     <>
       <div className="flex flex-col mt-[11.96875em] mb-[11.0625em] max-w-[1200px] lg:mx-auto  px-[1.25em] gap-[2em]">
-        <p className="text-[#F6D167] font-Inter text-[0.875rem] font-bold uppercase">
+        <motion.p
+          className="text-[#F6D167] font-Inter text-[0.875rem] font-bold uppercase"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+            },
+          }}
+        >
           About Us
-        </p>
+        </motion.p>
 
         <div className="sm:flex sm:items-center sm:justify-between">
-          <p className="text-[#FFF] font-PlayfairDisplay text-[4.5rem] font-bold capitalize">
+          <motion.p
+            className="text-[#FFF] font-PlayfairDisplay text-[4.5rem] font-bold capitalize"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             About Us
-          </p>
+          </motion.p>
 
-          <div className="flex items-center gap-[1em] mt-[1em] sm:mt-[0em]">
+          <motion.div
+            className="flex items-center gap-[1em] mt-[1em] sm:mt-[0em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             <img
               src={home}
               alt=""
@@ -40,7 +80,7 @@ export default function AboutHeroSection() {
             >
               About Us
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
