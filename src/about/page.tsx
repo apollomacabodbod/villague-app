@@ -1,5 +1,6 @@
 import modernHouse from "src/assets/about-us/modern-house.jpg";
 import AboutHeroSection from "./_components/about-hero-section";
+import AboutVillague from "./_components/about-villague";
 
 export default function About() {
   return (
@@ -14,6 +15,8 @@ export default function About() {
           <AboutHeroSection />
         </div>
       </div>
+
+      <AboutVillague />
     </>
   );
 }
