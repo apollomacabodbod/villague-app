@@ -1,4 +1,5 @@
 import checkCircle from "src/assets/about-us/check-circle.svg";
+import { motion } from "framer-motion";
 
 export default function AboutOtherAmenitiesCards() {
   const data = [
@@ -45,20 +46,57 @@ export default function AboutOtherAmenitiesCards() {
             className="flex flex-col bg-[#FFF] p-[2em] gap-[1em]"
           >
             <div className="flex items-center gap-[1em]">
-              <img
+              <motion.img
                 src={item.image}
                 alt=""
                 className="object-cover object-center w-[2em]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               />
 
-              <p className="text-[#222] font-PlayfairDisplay text-[1.25rem] font-bold">
+              <motion.p
+                className="text-[#222] font-PlayfairDisplay text-[1.25rem] font-bold"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 {item.title}
-              </p>
+              </motion.p>
             </div>
 
-            <p className="text-[#828282] font-Inter font-normal ">
+            <motion.p
+              className="text-[#828282] font-Inter font-normal "
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               {item.description}
-            </p>
+            </motion.p>
           </div>
         ))}
       </div>
