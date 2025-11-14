@@ -1,6 +1,8 @@
 import modernHouse from "src/assets/about-us/modern-house.jpg";
 import AboutHeroSection from "./_components/about-hero-section";
 import AboutVillague from "./_components/about-villague";
+import AboutOtherAmenities from "./_components/about-other-amenities";
+import modernWoodenHouse from "src/assets/about-us/modern-wooden-house.jpg";
 
 export default function About() {
   return (
@@ -17,6 +19,17 @@ export default function About() {
       </div>
 
       <AboutVillague />
+
+      <div
+        className="relative bg-cover bg-center flex flex-col pt-[5em] xl:mt-[6.19875em] "
+        style={{ backgroundImage: `url(${modernWoodenHouse})` }}
+      >
+        <div className="absolute inset-0 bg-[rgba(34,34,34,0.50)]"></div>
+
+        <div className="z-20">
+          <AboutOtherAmenities />
+        </div>
+      </div>
     </>
   );
 }
