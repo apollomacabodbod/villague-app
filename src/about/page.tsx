@@ -6,6 +6,7 @@ import modernWoodenHouse from "src/assets/about-us/modern-wooden-house.jpg";
 import AboutOtherAmenitiesCards from "./_components/about-other-amenities-cards";
 import HomeOurFacilities from "../home/_components/home-our-facilities";
 import HomeOurFacilitiesCards from "../home/_components/home-our-facilities-cards";
+import HomeOtherAmenities from "../home/_components/home-other-amenities";
 
 export default function About() {
   return (
@@ -37,6 +38,7 @@ export default function About() {
 
       <HomeOurFacilities />
       <HomeOurFacilitiesCards />
+      <HomeOtherAmenities />
     </>
   );
 }
