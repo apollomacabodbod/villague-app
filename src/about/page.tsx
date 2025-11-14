@@ -7,6 +7,7 @@ import AboutOtherAmenitiesCards from "./_components/about-other-amenities-cards"
 import HomeOurFacilities from "../home/_components/home-our-facilities";
 import HomeOurFacilitiesCards from "../home/_components/home-our-facilities-cards";
 import HomeOtherAmenities from "../home/_components/home-other-amenities";
+import HomeOurCustomer from "../home/_components/home-our-customer";
 
 export default function About() {
   return (
@@ -39,6 +40,10 @@ export default function About() {
       <HomeOurFacilities />
       <HomeOurFacilitiesCards />
       <HomeOtherAmenities />
+
+      <div className="mt-[3.125em] mb-[10em]">
+        <HomeOurCustomer />
+      </div>
     </>
   );
 }
