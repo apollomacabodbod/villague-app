@@ -43,7 +43,7 @@ export default function AboutOtherAmenitiesCards() {
         {data.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col bg-[#FFF] p-[2em] gap-[1em]"
+            className="flex flex-col bg-[#FFF] p-[2em] gap-[1em] shadow-lg"
           >
             <div className="flex items-center gap-[1em]">
               <motion.img

@@ -4,6 +4,8 @@ import AboutVillague from "./_components/about-villague";
 import AboutOtherAmenities from "./_components/about-other-amenities";
 import modernWoodenHouse from "src/assets/about-us/modern-wooden-house.jpg";
 import AboutOtherAmenitiesCards from "./_components/about-other-amenities-cards";
+import HomeOurFacilities from "../home/_components/home-our-facilities";
+import HomeOurFacilitiesCards from "../home/_components/home-our-facilities-cards";
 
 export default function About() {
   return (
@@ -22,7 +24,7 @@ export default function About() {
       <AboutVillague />
 
       <div
-        className="relative bg-cover bg-center flex flex-col pt-[5em] xl:mt-[6.19875em] "
+        className="relative bg-cover bg-center flex flex-col pt-[5em] xl:mt-[6.19875em] mb-[11.86375em] "
         style={{ backgroundImage: `url(${modernWoodenHouse})` }}
       >
         <div className="absolute inset-0 bg-[rgba(34,34,34,0.50)]"></div>
@@ -32,6 +34,9 @@ export default function About() {
           <AboutOtherAmenitiesCards />
         </div>
       </div>
+
+      <HomeOurFacilities />
+      <HomeOurFacilitiesCards />
     </>
   );
 }
