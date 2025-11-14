@@ -3,6 +3,7 @@ import AboutHeroSection from "./_components/about-hero-section";
 import AboutVillague from "./_components/about-villague";
 import AboutOtherAmenities from "./_components/about-other-amenities";
 import modernWoodenHouse from "src/assets/about-us/modern-wooden-house.jpg";
+import AboutOtherAmenitiesCards from "./_components/about-other-amenities-cards";
 
 export default function About() {
   return (
@@ -28,6 +29,7 @@ export default function About() {
 
         <div className="z-20">
           <AboutOtherAmenities />
+          <AboutOtherAmenitiesCards />
         </div>
       </div>
     </>
