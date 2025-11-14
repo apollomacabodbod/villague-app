@@ -74,7 +74,7 @@ export default function HomeOurCustomer() {
           </motion.p>
 
           <div className="grid md:grid-cols-2  relative top-[4em] gap-[1.875em]">
-            <div className="flex flex-col p-[2em] bg-[#FFF] gap-[1.5em]">
+            <div className="flex flex-col p-[2em] bg-[#FFF] gap-[1.5em] shadow-lg">
               <motion.img
                 src={doubleQuotes}
                 alt=""
