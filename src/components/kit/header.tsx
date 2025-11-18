@@ -53,11 +53,11 @@ export default function Header() {
                   ABOUT
                 </Link>
                 <Link
-                  to={"/menu"}
+                  to={"/vacancies"}
                   className="text-white font-inter text-[0.875rem] not-italic font-bold "
                 >
                   {""}
-                  SERVICES
+                  VACANCIES
                 </Link>
                 <Link
                   to={"/blog"}
