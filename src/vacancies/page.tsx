@@ -1,5 +1,6 @@
 import beautifulExterior from "src/assets/vacancies/beautiful-exterior.jpg";
 import VacanciesHeroSection from "./_components/vacancies-hero-section";
+import VacanciesCards from "./_components/vacancies-cards";
 
 export default function Vacancies() {
   return (
@@ -14,6 +15,8 @@ export default function Vacancies() {
           <VacanciesHeroSection />
         </div>
       </div>
+
+      <VacanciesCards />
     </>
   );
 }
