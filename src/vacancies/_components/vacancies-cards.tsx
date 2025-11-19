@@ -58,7 +58,7 @@ export default function VacanciesCards() {
           <div key={item.id}>
             <div className="flex flex-col gap-[1em]">
               <motion.div
-                className="relative bg-center bg-cover aspect-[33/40]"
+                className="relative bg-center bg-cover aspect-[330/400]"
                 style={{ backgroundImage: `url(${item.image})` }}
                 initial="hidden"
                 whileInView="visible"
