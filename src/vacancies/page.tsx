@@ -2,6 +2,7 @@ import beautifulExterior from "src/assets/vacancies/beautiful-exterior.jpg";
 import VacanciesHeroSection from "./_components/vacancies-hero-section";
 import VacanciesCards from "./_components/vacancies-cards";
 import VacanciesVillahueJob from "./_components/vacancies-villahue-job";
+import VacanciesWorkingVillague from "./_components/vacancies-working-villague";
 
 export default function Vacancies() {
   return (
@@ -19,6 +20,7 @@ export default function Vacancies() {
 
       <VacanciesCards />
       <VacanciesVillahueJob />
+      <VacanciesWorkingVillague />
     </>
   );
 }
