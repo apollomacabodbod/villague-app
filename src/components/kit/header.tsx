@@ -60,7 +60,7 @@ export default function Header() {
                   VACANCIES
                 </Link>
                 <Link
-                  to={"/blog"}
+                  to={"/pricing"}
                   className="text-white font-inter text-[0.875rem] not-italic font-bold "
                 >
                   {" "}
