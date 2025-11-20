@@ -1,6 +1,7 @@
 import mediterraneanVilla from "src/assets/pricing/mediterranean-villa.jpg";
 import PricingHeroSection from "./_components/pricing-hero-section";
 import PricingPackage from "./_components/pricing-package";
+import PricingCards from "./_components/pricing-cards";
 
 export default function Pricing() {
   return (
@@ -19,6 +20,7 @@ export default function Pricing() {
       </div>
 
       <PricingPackage />
+      <PricingCards />
     </>
   );
 }
