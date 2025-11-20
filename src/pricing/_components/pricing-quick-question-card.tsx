@@ -60,17 +60,39 @@ export default function PricingQuickQuestionCard() {
               className="flex items-center justify-between cursor-pointer select-none"
               onClick={() => setOpenIndexState(isOpen ? null : index)}
             >
-              <p
+              <motion.p
                 className={`font-PlayfairDisplay text-[0.8rem] sm:text-[0.9rem] lg:text-[1.25rem] font-bold ${
                   isOpen ? "text-[#26C]" : "text-black"
                 }`}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               >
                 {title}
-              </p>
-              <img
+              </motion.p>
+              <motion.img
                 src={isOpen ? upArrow : downArrow}
                 alt=""
                 className="w-[0.75em] transition-all duration-300"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               />
             </div>
 
