@@ -6,6 +6,7 @@ import PricingOurPartners from "./_components/pricing-our-partners";
 import PricingOurPartnersCards from "./_components/pricing-our-partners-cards";
 import PricingCustomer from "./_components/pricing-customer";
 import PricingQuickQuestion from "./_components/pricing-quick-question";
+import PricingQuickQuestionCard from "./_components/pricing-quick-question-card";
 
 export default function Pricing() {
   return (
@@ -29,6 +30,7 @@ export default function Pricing() {
       <PricingOurPartnersCards />
       <PricingCustomer />
       <PricingQuickQuestion />
+      <PricingQuickQuestionCard />
     </>
   );
 }
