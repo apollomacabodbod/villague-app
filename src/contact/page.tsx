@@ -1,5 +1,6 @@
 import modernMansion from "src/assets/contact/modern-mansion.jpg";
 import ContactHeroSection from "./_components/contact-hero-section";
+import ContactGettingStarted from "./_components/contact-getting-started";
 
 export default function Contact() {
   return (
@@ -14,6 +15,8 @@ export default function Contact() {
           <ContactHeroSection />
         </div>
       </div>
+
+      <ContactGettingStarted />
     </>
   );
 }
