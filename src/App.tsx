@@ -7,6 +7,7 @@ import Home from "./home/page";
 import About from "./about/page";
 import Vacancies from "./vacancies/page";
 import Pricing from "./pricing/page";
+import Contact from "./contact/page";
 
 function App() {
   const location = useLocation(); // ✅ Use the hook
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/vacancies" element={<Vacancies />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       {/* ✅ Use location.pathname safely */}
