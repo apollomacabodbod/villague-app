@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="bg-[#222] pt-[6.25em]">
         <div className="flex flex-col max-w-[1200px] lg:mx-auto  px-[1.25em]">
           {/* First component */}
-          <div className="flex flex-col max-w-[1200px] lg:mx-auto  px-[1.25em] py-[4em] lg:px-[4em]  bg-[rgba(217,226,205,0.80)] shadow-[0_4px_30px_0_rgba(0, 0, 0, 0.03)]">
+          <div className="flex flex-col max-w-[1200px]  px-[1.25em] py-[4em] lg:px-[4em]  bg-[rgba(217,226,205,0.80)] shadow-[0_4px_30px_0_rgba(0, 0, 0, 0.03)]">
             <div className="lg:flex lg:items-center lg:justify-between">
               <div className="flex flex-col gap-[0.5em]">
                 <motion.p
