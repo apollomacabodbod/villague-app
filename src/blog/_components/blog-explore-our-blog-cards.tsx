@@ -8,6 +8,8 @@ import seven from "src/assets/explore-our-blog/seven.jpg";
 import eight from "src/assets/explore-our-blog/eight.jpg";
 import nine from "src/assets/explore-our-blog/nine.jpg";
 
+import { motion } from "framer-motion";
+
 export default function BlogExploreOurBlogCards() {
   const data = [
     {
@@ -71,26 +73,76 @@ export default function BlogExploreOurBlogCards() {
   return (
     <>
       <div className="flex flex-col mt-[6.25em]">
-        <p className="text-[#222] font-PlayfairDisplay text-[2.25rem] font-bold capitalize text-center ">
+        <motion.p
+          className="text-[#222] font-PlayfairDisplay text-[2.25rem] font-bold capitalize text-center "
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+            },
+          }}
+        >
           Explore Our Blog
-        </p>
+        </motion.p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  gap-[1.875em] max-w-[1200px] lg:mx-auto  px-[1.25em] mt-[4em]">
         {data.map((item) => (
           <div key={item.id} className="flex flex-col gap-[1em]">
-            <img
+            <motion.img
               src={item.image}
               alt=""
               className="object-cover object-center aspect-[330/240]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
             />
 
-            <p className="text-[#222] font-PlayfairDisplay text-[1.25rem] font-bold ">
+            <motion.p
+              className="text-[#222] font-PlayfairDisplay text-[1.25rem] font-bold "
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               Tellus massa tempor dignissim
-            </p>
+            </motion.p>
 
-            <p className="text-[#828282] font-Inter text-[0.75rem] font-bold uppercase">
+            <motion.p
+              className="text-[#828282] font-Inter text-[0.75rem] font-bold uppercase"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               OCTOBER 21, 2021 NO COMMENTS
-            </p>
+            </motion.p>
           </div>
         ))}
       </div>
