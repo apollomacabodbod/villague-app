@@ -9,6 +9,7 @@ module.exports = {
         customTwo: "800px",
         customTwo: "945px",
         customThree: "1041px",
+        customFour: "1130px",
       },
 
       fontFamily: {
