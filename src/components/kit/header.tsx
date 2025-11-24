@@ -67,7 +67,7 @@ export default function Header() {
                   PRICING
                 </Link>
                 <Link
-                  to={"/shop"}
+                  to={"/blog"}
                   className="text-white font-inter text-[0.875rem] not-italic font-bold "
                 >
                   {" "}
