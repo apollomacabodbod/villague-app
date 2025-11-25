@@ -7,6 +7,7 @@ import six from "src/assets/explore-our-blog/six.jpg";
 import seven from "src/assets/explore-our-blog/seven.jpg";
 import eight from "src/assets/explore-our-blog/eight.jpg";
 import nine from "src/assets/explore-our-blog/nine.jpg";
+import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion";
 
@@ -92,7 +93,11 @@ export default function BlogExploreOurBlogCards() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  gap-[1.875em] max-w-[1200px] lg:mx-auto  px-[1.25em] mt-[4em]">
         {data.map((item) => (
-          <div key={item.id} className="flex flex-col gap-[1em]">
+          <Link
+            key={item.id}
+            to={`/blog/${item.id}`}
+            className="flex flex-col gap-[1em]"
+          >
             <motion.img
               src={item.image}
               alt=""
@@ -143,7 +148,7 @@ export default function BlogExploreOurBlogCards() {
             >
               OCTOBER 21, 2021 NO COMMENTS
             </motion.p>
-          </div>
+          </Link>
         ))}
       </div>
     </>
