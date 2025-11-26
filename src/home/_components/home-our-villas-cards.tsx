@@ -52,7 +52,7 @@ export default function HomeOurVillasCards() {
               }}
             >
               <motion.div
-                className="absolute top-[22.0625em] left-[1em]"
+                className="absolute top-[88.25%] left-[4.84%]" // top % = (desired pixel distance / parent height) * 100  and left %  = (desired pixel distance / parent width) * 100
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
